@@ -169,7 +169,7 @@ function Hero() {
           </div>
 
           <div className="buttons">
-            <button>My Projects</button>
+            <a href='#projects'>My Projects</a>
           </div>
 
         </div>

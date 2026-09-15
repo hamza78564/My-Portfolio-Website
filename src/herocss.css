@@ -218,17 +218,17 @@ body {
   align-self: flex-start;
 }
 
-.main_hero .me .buttons button {
+.main_hero .me .buttons a {
   background-color: transparent;
-
+  text-decoration: none;
   color: white;
 
   border: 1px solid #1d3448;
 
   padding: 15px 30px;
-
+ display: inline-block;
   width: 250px;
-
+text-align: center;
   font-size: 18px;
 
   border-radius: 9px;
@@ -242,7 +242,7 @@ body {
     box-shadow 0.8s ease;
 }
 
-.main_hero .me .buttons button:hover {
+.main_hero .me .buttons a:hover {
   background-color: white;
   color: #0c1722;
 
