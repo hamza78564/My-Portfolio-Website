@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 20px 0;
+    background-color:#010e1d ;
+        position: relative;
+
+}
+.main_header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+position: relative;
+padding-inline:clamp(25px, 5vw, 120px) ;
+margin: 0 auto;
+
+}
+.navbar{
+     display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li a{
+text-decoration: none;
+font-size: 15px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.4s ease-in, font-size 0.2s ease; 
+}
+.music_toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 14px;
+
+  background: rgba(0, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 255, 0.18);
+  border-radius: 8px;
+
+  color: #aebdca;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.music_toggle:hover {
+  transform: translateY(-2px);
+  color: #d9faff;
+  border-color: rgba(0, 255, 255, 0.45);
+  background: rgba(0, 255, 255, 0.06);
+}
+
+.music_toggle.playing {
+  color: cyan;
+  border-color: rgba(0, 255, 255, 0.5);
+  background: rgba(0, 255, 255, 0.08);
+
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.18),
+    inset 0 0 10px rgba(0, 255, 255, 0.04);
+}
+
+.music_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 16px;
+
+  font-size: 11px;
+}
+.navbar li a:hover{
+    color: cyan;
+    font-size: 17px;
+}
+.name{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+.menu_button{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.glow_line{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
+}
+@media (max-width:768px){
+    .navbar{
+        display: none;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+    .menu_button{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    .navbar.open{
+        display: block;
+        position: absolute;
+        top: 43px;
+        left: 0;
+        width: 100%;
+        padding: 20px 25px;
+        background-color:#010e1d ;
+        z-index: 5;
+    }
+    
+}
