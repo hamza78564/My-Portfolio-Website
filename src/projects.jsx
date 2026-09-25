@@ -27,7 +27,7 @@ function Projects() {
       title: "Website For my Teacher",
       description: "A portfolio page for my teacher",
       image: fourthwebsite,
-      link:"https://github.com/hamza78564/Cosmetics"
+      link:"https://capturednelly.vercel.app/"
     }
   ]
  const tools = [
