@@ -2,7 +2,7 @@ import './ProjectCss.css'
 import firstwebsite from './assets/firstwebsite.png'
 import secondwebsite from './assets/SecondWebsite.png'
 import thirdwebsite from './assets/ThirdWebsite.png'
-
+import fourthwebsite from './assets/fourthwebsite.png'
 function Projects() {
 
   const websites = [
@@ -22,6 +22,11 @@ function Projects() {
       title: "Makeup Website",
       description: "My third and best website",
       image: thirdwebsite,
+      link:"https://github.com/hamza78564/Cosmetics"
+    },{
+      title: "Website For my Teacher",
+      description: "A portfolio page for my teacher",
+      image: fourthwebsite,
       link:"https://github.com/hamza78564/Cosmetics"
     }
   ]
